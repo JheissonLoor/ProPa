@@ -6,28 +6,30 @@ const Home = () => {
   return (
     <div className="home">
       <section className="hero">
-        <h1>Bienvenido a Mi Tienda</h1>
-        <p>Tu destino para productos de alimentación y pañalería</p>
-        <div className="cta-buttons">
-          <Link to="/alimentacion" className="cta-button">Ver Alimentación</Link>
-          <Link to="/pañaleria" className="cta-button">Ver Pañalería</Link>
+        <div className="hero-content">
+          <h1>
+            Todo para el cuidado
+            <span>de tu bebé</span>
+          </h1>
+          <p>Al mejor precio, con la mejor calidad</p>
+          <div className="hero-buttons">
+            <Link to="/pañaleria" className="hero-button primary-button">
+              Ver productos
+            </Link>
+            <Link to="/promociones" className="hero-button secondary-button">
+              Ofertas especiales
+            </Link>
+          </div>
         </div>
-      </section>
-
-      <section className="features">
-        <div className="feature-card">
-          <h3>Alimentación</h3>
-          <p>Encuentra los mejores productos alimenticios para tu familia</p>
-          <Link to="/alimentacion">Explorar</Link>
-        </div>
-        <div className="feature-card">
-          <h3>Pañalería</h3>
-          <p>Productos de calidad para el cuidado de tu bebé</p>
-          <Link to="/pañaleria">Explorar</Link>
+        <div className="hero-image">
+          <img
+            src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg"
+            alt="Bebé feliz"
+          />
         </div>
       </section>
     </div>
   );
 };
 
-export default Home; 
+export default Home;
